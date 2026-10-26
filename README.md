@@ -11,6 +11,7 @@ plate prints its sources, data date, method and caveats under the map.
 | No. | Plate | Cause | Added |
 |---|---|---|---|
 | 01 | [The grid under strain](https://jvkenny.github.io/living-chicago-atlas/#illinois-grid) | environment | 2026-10-25 |
+| 02 | [The ghost shorelines of Chicago](https://jvkenny.github.io/living-chicago-atlas/#ghost-shorelines) | history | 2026-10-26 |
 
 ## Using a plate
 
@@ -28,4 +29,4 @@ Merging the pull request updates the live site.
 Map base: Natural Earth (public domain). Street detail from zoom 9: OpenFreeMap tiles,
 © OpenStreetMap contributors. Renderer: MapLibre GL JS (BSD-3).
 
-Built 2026-10-25.
+Built 2026-10-26.
