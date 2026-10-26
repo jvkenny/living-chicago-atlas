@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Chicago-area stories, mapped on one shared base and added to every week.">
+<meta property="og:title" content="Living Chicago Atlas">
+<meta property="og:description" content="Chicago-area stories, mapped on one shared base and added to every week.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%23F1ECDA%22/%3E%3Ccircle cx=%228%22 cy=%228%22 r=%224%22 fill=%22%23B95A1F%22/%3E%3C/svg%3E">
+<title>Living Chicago Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Roboto+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="maplibre-gl-5.24.0.css">
+<link rel="stylesheet" href="atlas.css">
+</head>
+<body>
+<div class="atlas">
+  <aside class="column" aria-label="Atlas index and story">
+    <header class="masthead">
+      <p class="name" id="atlas-name">Living Chicago Atlas</p>
+      <p class="sub" id="atlas-sub"></p>
+    </header>
+    <nav class="index" aria-label="Plates in the atlas">
+      <div class="index-head"><span>Plates</span><span id="plate-count"></span></div>
+      <ul class="plates" id="plates"></ul>
+      <p class="coming">A new plate is added most weeks. Each one keeps the same base, so plates can be laid over one another.</p>
+    </nav>
+    <article class="story" id="story" aria-live="polite"></article>
+    <p class="colophon" id="colophon"></p>
+  </aside>
+  <div class="map-wrap">
+    <div id="map" role="region" aria-label="Map"></div>
+    <div class="map-title" id="map-title"></div>
+    <button class="btn home-btn" id="home" type="button" title="Back to this plate's view">Reset view</button>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script src="atlas.js"></script>
+</body>
+</html>
