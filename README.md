@@ -2,15 +2,15 @@
 
 Chicago-area stories, mapped on one shared base and added to every week.
 
-**Live at https://jvkenny.github.io/living-chicago-atlas/** (once GitHub Pages is on for this repo).
+**Live at https://jvkenny.github.io/living-chicago-atlas/**
 
 One web map of the Chicago area that grows by a plate most weeks. Every plate is one story with one
 takeaway, drawn on the same shared base, so plates can be read alone or laid over one another. Each
 plate prints its sources, data date, method and caveats under the map.
 
-| No. | Plate | Cause | Added | Status |
-|---|---|---|---|---|
-| 01 | [The grid under strain](https://jvkenny.github.io/living-chicago-atlas/#illinois-grid) | environment | 2026-10-26 | draft |
+| No. | Plate | Cause | Added |
+|---|---|---|---|
+| 01 | [The grid under strain](https://jvkenny.github.io/living-chicago-atlas/#illinois-grid) | environment | 2026-10-25 |
 
 ## Using a plate
 
@@ -28,4 +28,4 @@ Merging the pull request updates the live site.
 Map base: Natural Earth (public domain). Street detail from zoom 9: OpenFreeMap tiles,
 © OpenStreetMap contributors. Renderer: MapLibre GL JS (BSD-3).
 
-Built 2026-10-26.
+Built 2026-10-25.
