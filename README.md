@@ -1,32 +1,9 @@
-# Living Chicago Atlas
+# Living Chicago Atlas (moved)
 
-Chicago-area stories, mapped on one shared base and added to every week.
+The Living Chicago Atlas now lives on John Kenny's site: **https://jvkenny.com/atlas/chicago/**
 
-**Live at https://jvkenny.github.io/living-chicago-atlas/**
+This GitHub Pages site only redirects there. Old links keep working: the redirect carries the plate
+(`#ghost-shorelines`, `#transit-land/station=…`) and `?embed` across.
 
-One web map of the Chicago area that grows by a plate most weeks. Every plate is one story with one
-takeaway, drawn on the same shared base, so plates can be read alone or laid over one another. Each
-plate prints its sources, data date, method and caveats under the map.
-
-| No. | Plate | Cause | Added |
-|---|---|---|---|
-| 01 | [The grid under strain](https://jvkenny.github.io/living-chicago-atlas/#illinois-grid) | environment | 2026-10-25 |
-| 02 | [The ghost shorelines of Chicago](https://jvkenny.github.io/living-chicago-atlas/#ghost-shorelines) | history | 2026-10-26 |
-
-## Using a plate
-
-- Link to a plate: `https://jvkenny.github.io/living-chicago-atlas/#<plate-id>`
-- Embed the map only: `<iframe src="https://jvkenny.github.io/living-chicago-atlas/?embed#<plate-id>" width="100%" height="560" style="border:0"></iframe>`
-- Each plate's data is plain GeoJSON under `layers/<plate-id>/data/`.
-
-## How this repo is made
-
-This repo is build output. The atlas source (plate manifests, prep scripts, the base map and the
-build checks) lives in `news-maps/living-chicago-atlas/` in jvkenny/command-center, and raw data
-lives in Drive. Each update here comes from `python3 tools/export_pages.py` there, as a pull request.
-Merging the pull request updates the live site.
-
-Map base: Natural Earth (public domain). Street detail from zoom 9: OpenFreeMap tiles,
-© OpenStreetMap contributors. Renderer: MapLibre GL JS (BSD-3).
-
-Built 2026-10-26.
+The atlas is built from `news-maps/living-chicago-atlas` in jvkenny/command-center
+(`tools/build.py`, then `tools/publish_portfolio.py chicago ~/dev/Professional-Portfolio`).
